@@ -21,7 +21,7 @@ for(let i = 0;i<touristSpots.length;i++){
 		hashMap.set(touristSpots[i], touristSpots[i]);
 	}
 }
-removedArticles.sort((a,b)=>a.localeCompare(b));
+removedArticles.sort((a,b)=>a>b);
 for(let i =0;i<removedArticles.length;i++){
 	touristSpots[i] = hashMap.get(removedArticles[i]);
 }
